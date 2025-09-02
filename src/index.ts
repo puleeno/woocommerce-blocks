@@ -37,8 +37,8 @@ export const WooCommerceBlocks = {
   }
 };
 
-// Auto-initialize when DOM is ready
-if (typeof document !== 'undefined') {
+// Auto-initialize when DOM is ready (only in browser environment)
+if (typeof window !== 'undefined' && typeof document !== 'undefined') {
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', () => WooCommerceBlocks.init());
   } else {

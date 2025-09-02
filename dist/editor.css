@@ -1,0 +1,91 @@
+/*!**************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./css/editor.scss ***!
+  \**************************************************************************************************************************************/
+/**
+ * Colors
+ */
+/**
+ * Fonts & basic variables.
+ */
+/**
+ * Typography
+ */
+/**
+ * Grid System.
+ * https://make.wordpress.org/design/2019/10/31/proposal-a-consistent-spacing-system-for-wordpress/
+ */
+/**
+ * Radius scale.
+ */
+/**
+ * Elevation scale.
+ */
+/**
+ * Dimensions.
+ */
+/**
+ * Mobile specific styles
+ */
+/**
+ * Editor styles.
+ */
+/**
+ * Block & Editor UI.
+ */
+/**
+ * Block paddings.
+ */
+/**
+ * React Native specific.
+ * These variables do not appear to be used anywhere else.
+ */
+/**
+ * Colors
+ */
+/* stylelint-disable block-closing-brace-newline-after */
+/* stylelint-enable */
+.editor-styles-wrapper .wc-block-grid .wc-block-grid__products {
+  list-style: none;
+  margin: 0 -8px 16px;
+  padding: 0;
+}
+.editor-styles-wrapper .wc-block-grid .wc-block-grid__products .wc-block-grid__product {
+  margin: 0 0 24px 0;
+}
+.editor-styles-wrapper .wc-block-grid .wc-block-grid__products .wc-block-grid__product .wc-block-grid__product-onsale {
+  position: absolute;
+}
+.editor-styles-wrapper .wc-block-grid.components-placeholder {
+  padding: 2em 1em;
+}
+.editor-styles-wrapper .wc-block-grid.is-loading, .editor-styles-wrapper .wc-block-grid.is-not-found {
+  display: block;
+}
+
+.components-base-control + .wc-block-base-control-notice {
+  margin: -16px 0 16px;
+}
+.components-base-control + .wc-block-base-control-notice:last-child {
+  margin: -16px 0 12px;
+}
+
+svg.wc-block-editor-components-block-icon--sparkles path {
+  fill: currentColor;
+}
+
+.block-editor-list-view-leaf.is-selected .block-editor-list-view-block-contents svg.wc-block-editor-components-block-icon {
+  color: currentColor;
+}
+
+.theme-twentytwenty .wp-block .wc-block-grid__product-title,
+.theme-twentytwenty .wp-block .wc-block-active-filters__title,
+.theme-twentytwenty .wp-block .wc-block-attribute-filter__title,
+.theme-twentytwenty .wp-block .wc-block-price-filter__title,
+.theme-twentytwenty .wp-block .wc-block-stock-filter__title {
+  font-size: 1em;
+}
+
+.woocommerce-customer-effort-score__errors > p {
+  color: #cc1818;
+  margin-bottom: 16px;
+}
