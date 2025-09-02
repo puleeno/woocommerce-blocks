@@ -1,0 +1,80 @@
+// Global Styles for WooCommerce Blocks
+// This file imports all abstracts and makes them available globally
+
+// Import all abstracts
+@import "abstracts/variables";
+@import "abstracts/colors";
+@import "abstracts/breakpoints";
+@import "abstracts/mixins";
+
+// Global CSS custom properties
+:root {
+  // Variables
+  --gap-huge: #{$gap-huge};
+  --gap-largest: #{$gap-larger};
+  --gap-larger: #{$gap-larger};
+  --gap-large: #{$gap-large};
+  --gap: #{$gap};
+  --gap-small: #{$gap-small};
+  --gap-smaller: #{$gap-smaller};
+  --gap-smallest: #{$gap-smallest};
+  --universal-border-radius: #{$universal-border-radius};
+
+  // Colors
+  --discount-color: #{$discount-color};
+  --input-text-light: #{$input-text-light};
+  --input-text-dark: #{$input-text-dark};
+  --input-placeholder-dark: #{$input-placeholder-dark};
+  --input-border-dark: #{$input-border-dark};
+  --input-background-light: #{$input-background-light};
+  --input-background-dark: #{$input-background-dark};
+  --image-placeholder-border-color: #{$image-placeholder-border-color};
+  --universal-border-light: #{$universal-border-light};
+  --universal-border-medium: #{$universal-border-medium};
+  --universal-border-strong: #{$universal-border-strong};
+  --universal-body-low-emphasis: #{$universal-body-low-emphasis};
+  --universal-background: #{$universal-background};
+}
+
+// Global utility classes
+.wc-blocks {
+  // Spacing utilities
+  &--gap-huge { margin: $gap-huge; }
+  &--gap-largest { margin: $gap-largest; }
+  &--gap-larger { margin: $gap-larger; }
+  &--gap-large { margin: $gap-large; }
+  &--gap { margin: $gap; }
+  &--gap-small { margin: $gap-small; }
+  &--gap-smaller { margin: $gap-smaller; }
+  &--gap-smallest { margin: $gap-smallest; }
+
+  // Border radius utilities
+  &--border-radius { border-radius: $universal-border-radius; }
+
+  // Color utilities
+  &--discount { color: $discount-color; }
+  &--input-light {
+    color: $input-text-light;
+    background: $input-background-light;
+  }
+  &--input-dark {
+    color: $input-text-dark;
+    background: $input-background-dark;
+  }
+}
+
+// Global responsive utilities using breakpoints
+@each $breakpoint, $value in $breakpoints {
+  @media (min-width: $value) {
+    .wc-blocks {
+      &--#{$breakpoint}-gap-huge { margin: $gap-huge; }
+      &--#{$breakpoint}-gap-largest { margin: $gap-largest; }
+      &--#{$breakpoint}-gap-larger { margin: $gap-larger; }
+      &--#{$breakpoint}-gap-large { margin: $gap-large; }
+      &--#{$breakpoint}-gap { margin: $gap; }
+      &--#{$breakpoint}-gap-small { margin: $gap-small; }
+      &--#{$breakpoint}-gap-smaller { margin: $gap-smaller; }
+      &--#{$breakpoint}-gap-smallest { margin: $gap-smallest; }
+    }
+  }
+}
