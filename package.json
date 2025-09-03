@@ -1,6 +1,6 @@
 {
   "name": "woocommerce-blocks",
-  "version": "10.1.6",
+  "version": "10.1.7",
   "description": "WooCommerce Blocks package with TypeScript and Webpack support",
   "main": "dist/index.js",
   "scripts": {

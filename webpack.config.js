@@ -75,6 +75,19 @@ module.exports = {
                 ]
               },
               additionalData: `
+                // WordPress Base Styles - Global imports
+                @import "~@wordpress/base-styles/colors";
+                @import "~@wordpress/base-styles/colors.native";
+                @import "~@wordpress/base-styles/variables";
+                @import "~@wordpress/base-styles/functions";
+                @import "~@wordpress/base-styles/breakpoints";
+                @import "~@wordpress/base-styles/animations";
+                @import "~@wordpress/base-styles/long-content-fade";
+                @import "~@wordpress/base-styles/mixins";
+                @import "~@wordpress/base-styles/z-index";
+                @import "~@wordpress/base-styles/default-custom-properties";
+
+                // Local abstracts (keep existing imports)
                 @import "css/abstracts/_variables.scss";
                 @import "css/abstracts/_colors.scss";
                 @import "css/abstracts/_breakpoints.scss";
