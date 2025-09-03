@@ -1,6 +1,6 @@
 {
   "name": "woocommerce-blocks",
-  "version": "10.1.5",
+  "version": "10.1.6",
   "description": "WooCommerce Blocks package with TypeScript and Webpack support",
   "main": "dist/index.js",
   "scripts": {
@@ -22,8 +22,13 @@
   },
   "dependencies": {
     "@automattic/color-studio": "^4.1.0",
+    "@woocommerce/tracks": "^1.4.0",
     "@wordpress/base-styles": "^6.5.0",
     "change-case": "^5.4.4",
-    "clsx": "^2.1.1"
+    "clsx": "^2.1.1",
+    "compare-versions": "^6.1.1",
+    "dataloader": "^2.2.3",
+    "dompurify": "^3.2.6",
+    "fast-sort": "^3.4.1"
   }
 }
